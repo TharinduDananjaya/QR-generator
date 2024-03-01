@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR code generator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" ></script>
 </head>
 <body>
+    <div class="form">
+        <h2>QR Code generator</h2>
+       
+        <input style="height: 2.8rem;width: 100%; background-color: rgb(46, 46, 46); border: none; outline: none; border-radius: 0.5rem;font-size: 1rem; padding-right: 1rem; padding-left: 0.7rem;color: white; "type="text" id="user_name" name="user_name" class="user_name input" placeholder="Enter your name.." >
+        <input style="height: 2.8rem;width: 100%; background-color: rgb(46, 46, 46); border: none; outline: none; border-radius: 0.5rem;font-size: 1rem; padding-right: 1rem; padding-left: 0.7rem;color: white; "type="email" id="user_email" name="user_email" class="user_email input" placeholder="Enter your email..">
+        <input style="height: 2.8rem;width: 100%; background-color: rgb(46, 46, 46); border: none; outline: none; border-radius: 0.5rem;font-size: 1rem; padding-right: 1rem; padding-left: 0.7rem;color: white; " type="number" id="user_phone" name="user_phone" class="user_phone input" placeholder="Enter your phone number..">
+        
+        <button  class="generate-qr">Generate QR Code</button>
     
+</div>
+    <div class="qr-canvas">
+        <h2>Your QR Code</h2>
+        <div class="loader"></div>
+        <img src="" class="qr-image ">
+    </div>
 </body>
 </html>
